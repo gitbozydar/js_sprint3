@@ -151,6 +151,6 @@ let ak47 = {
   caliber: "7.62x39",
   origin: "Russia",
 };
-if (ak47) {
+if (ak47["type"] !== undefined) {
   console.log("Broń posiada swój określony typ.");
-} else "Dodaj typ broni.";
+} else console.log("Dodaj typ broni.");
